@@ -32,18 +32,18 @@ Iedere keer als de applicatie opnieuw wordt opgestart, wordt de lijst die is opg
 4. Dit proces wordt herhaald voor alle karakters totdat het originele bericht is hersteld.
 
 
-## versimpeld voorbeeld
+## Versimpeld voorbeeld
 In dit voorbeeld worden de letters van het woord "hond" versleuteld naar "cfbi" met behulp van de key:
 - karakters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 - key      : ['g', 't', 'u', 'i', 'r', 'm', 'v', 'c', 'y', 'j', 'x', 'o', 'p', 'b', 'f', 'l', 'a', 'h', 'q', 'z', 'n', 'k', 's', 'd', 'e', 'w']
 
 
-### versleutelen
+### Versleutelen
 - De index van "h" in characters is 7.
 - Op index 7 in de key staat "c", dus "h" wordt versleuteld naar "c".
 - Dit proces wordt herhaald voor de andere letters in het bericht, wat leidt tot het versleutelde bericht "cfbi".
 
-### ontsleutelen
+### Ontsleutelen
 - De index van "c" in de key is 7.
 - Op index 7 in de characters staat "h", dus "c" wordt ontsleuteld naar "h".
 - Dit proces wordt herhaald om het originele bericht "hond" te herstellen.
