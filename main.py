@@ -6,8 +6,10 @@ import string
 # characters to use for encryption
 caracters = " " + string.punctuation + string.digits + string.ascii_letters
 
+
 # make a list of all the characters
 caracters = list(caracters)
+
 
 #################################################################################################################################
 
@@ -20,9 +22,6 @@ key = caracters.copy()
 # everythime you run the program the key will be different
 random.shuffle(key)
 
-
-#print(f"caracters: {caracters}")
-#print(f"key      : {key}")
 
 #################################################################################################################################
 
@@ -42,7 +41,6 @@ for letter in original_message:
     # find the letter at that index in the key
     encrypted_message += key[index]
 
-print(f'original message: {original_message}')
 print(f"Encrypted message: {encrypted_message}")
 
 #################################################################################################################################
